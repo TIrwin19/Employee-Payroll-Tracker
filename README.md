@@ -17,7 +17,7 @@ This webpage is an Employee Payroll Tracker for the Rutgers Coding Bootcamp. The
 
 ## Deployment
 
-Provided as a link here - 
+Provided as a link here - https://tirwin19.github.io/Employee-Payroll-Tracker/
 
 ## Usage
 
