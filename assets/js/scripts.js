@@ -44,26 +44,30 @@ const collectEmployees = function () {
     })
     
     let continueInput = window.confirm('Do you want to add another Employee?')
-    if (continueInput === true) {
-      continueAdding === true
-    } else {
+
+    if (!continueInput) {
       continueAdding = false
     }
   }
-
   return empData
-}
+} 
 
-// const employeesArray = collectEmployees()
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
   // TODO: Calculate and display the average salary
+  const totalSalary = employeesArray.reduce((acc, employeeArray) => acc + employeeArray.salary, 0)
 
+  const avgSalary = totalSalary / employeesArray.length
+
+  const avgDisplay = `The average salary of the ${employeesArray.length} employees is $${avgSalary}`
+
+  console.log(avgDisplay)
 }
 
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
   // TODO: Select and display a random employee
+ 
 }
 
 /*
